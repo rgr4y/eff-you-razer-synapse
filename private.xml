@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<root>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_SPEED_PLUS</name>
+    <url type="shell">
+        <![CDATA[    osascript /Users/YOURUSER/bin/mouse.applescript plus   ]]>
+    </url>
+  </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_SPEED_MINUS</name>
+    <url type="shell">
+        <![CDATA[    osascript /Users/YOURUSER/bin/mouse.applescript minus   ]]>
+    </url>
+  </vkopenurldef>
+  <item>
+      <name>Naga Remap</name>
+      <appendix>(VendorID,ProductID) == (0x1532,0x0015)</appendix>
+      <identifier>remap.naga_mouse</identifier>
+      <block>
+        <device_only>
+          <!-- 1st device -->
+          <!-- YOU MAY NEED TO CHANGE THIS TO MATCH YOUR DEVICE ID. Use Event Viewer in Karabiner to get this -->
+          DeviceVendor::RawValue::0x1532, DeviceProduct::RawValue::0x0015
+        </device_only>
+        <!-- Customize the key combos below to your heart's content -->
+        <autogen>__KeyToKey__ KeyCode::1, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::2, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::3, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::4, KeyCode::MINUS, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::5, KeyCode::EQUAL, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::6, KeyCode::0, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ PointingButton::BUTTON5, KeyCode::VK_OPEN_URL_SHELL_SPEED_PLUS</autogen>
+        <autogen>__KeyToKey__ PointingButton::BUTTON4, KeyCode::VK_OPEN_URL_SHELL_SPEED_MINUS</autogen>
+      </block>
+    </item>
+</root>
